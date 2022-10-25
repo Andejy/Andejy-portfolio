@@ -1,0 +1,541 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;700&display=swap");
+
+:root {
+  --AndejyPurple: #4313e0;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: black;
+  scroll-behavior: smooth;
+  font-weight: b;
+}
+
+body {
+  font-family: "VT323", monospace;
+  overflow-x: hidden;
+}
+i {
+  color: #fff;
+}
+
+p {
+  font-size: 25px;
+}
+button {
+  font-family: "VT323", monospace;
+  font-size: 1.1em;
+}
+
+.container-fluid {
+  margin: auto;
+  justify-content: space-evenly;
+}
+.navbar-nav {
+  
+  color: #000;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.collapse{
+  display: flex;
+  justify-content: space-evenly;
+  justify-content: flex-end;
+}
+.navbar-nav li {
+  margin: 1.5rem;
+}
+
+.navbar a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  transition: 1s;
+  font-size: 30px;
+}
+
+.logo {
+  border-bottom: none;
+}
+
+.navbar a:hover {
+  color: var(--AndejyPurple);
+  font-size: 20px;
+  border-bottom: 2px solid #000;
+}
+
+.main {
+  margin: 0 auto;
+  width: 80vw;
+  height: 80vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  background-color: rgba(245, 245, 245, 0.658);
+  gap: 2em;
+  border-radius: 20px;
+  border: 2px solid var(--AndejyPurple);
+  padding: 2em;
+}
+.main_backgraund {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/bag1.jpg") no-repeat center center/ cover;
+  animation: changes 10s infinite ease-in-out;
+  overflow: hidden;
+}
+
+.links {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin: 0 auto 50px auto;
+}
+.links i {
+  font-size: 2em;
+  color: var(--AndejyPurple);
+}
+.main h1 {
+  display: block;
+  font-size: 3.5em;
+  font-weight: bolder;
+  white-space: nowrap;
+  border-right: 4px solid black;
+  width: 18ch;
+  overflow: hidden;
+  animation: typing 2.5s steps(18), blink 0.5s infinite step-end alternate;
+}
+.main p {
+  font-size: 2em;
+}
+.main span {
+  color: var(--AndejyPurple);
+}
+.download-cv {
+  padding: 10px 20px;
+  background-color: var(--AndejyPurple);
+  color: #fff;
+  border-radius: 20px;
+  margin-top: 15px;
+  border: none;
+  box-shadow: 1px 3px 11px 1px var(--AndejyPurple);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.icon {
+  background-color: #fff;
+}
+.download-cv:hover {
+  background-color: #fff;
+  color: var(--AndejyPurple);
+  border: 2px solid var(--AndejyPurple);
+  box-shadow: none;
+}
+
+.main img {
+  width: 450px;
+  height: 520px;
+  border: 7px solid var(--AndejyPurple);
+  border-radius: 10px;
+}
+#skills {
+  padding: 90px 0;
+  background-color: #fff;
+}
+
+#skills h2 {
+  padding-bottom: 50px;
+}
+
+#skills h4 {
+  font-size: 1.6em;
+  color: var(--AndejyPurple);
+}
+.skili {
+  font-size: 2em;
+  font-weight: bold;
+  margin: 1.2em;
+}
+#skills .divider {
+  margin-left: 1.3em;
+  margin-top: -5em;
+}
+
+.skills-row {
+  display: flex;
+  padding-bottom: 50px;
+}
+
+.skills-row-left,
+.skills-row-right {
+  width: 50%;
+  display: flex;
+}
+
+.skills-row-left-image,
+.skills-row-right-image {
+  width: 50%;
+  text-align: right;
+  padding-right: 50px;
+}
+
+.skills-row-left-image img,
+.skills-row-right-image img {
+  height: 100px;
+}
+
+.html-logo {
+  cursor: pointer;
+  transition: 0.5s;
+  animation: up 2s forwards ease-in-out infinite alternate;
+}
+.sas-logo {
+  cursor: pointer;
+  transition: 0.5s;
+  animation: up 2s forwards ease-in-out infinite alternate;
+}
+.css-logo {
+  cursor: pointer;
+  transition: 0.5s;
+  animation: down 2s forwards ease-in-out infinite alternate;
+}
+.boos-logo {
+  cursor: pointer;
+  transition: 0.5s;
+  animation: down 2s forwards ease-in-out infinite alternate;
+}
+.js-logo {
+  cursor: pointer;
+  transition: 0.5s;
+  animation: up 2s forwards ease-in-out infinite alternate;
+}
+.reactLogo {
+  animation: logo_rotate 6s linear infinite;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.html-logo:hover {
+  transform: scale(1.2);
+}
+.sas-logo:hover {
+  transform: scale(1.2);
+}
+.css-logo:hover {
+  transform: scale(1.2);
+}
+.boos-logo:hover {
+  transform: scale(1.2);
+}
+.js-logo:hover {
+  transform: scale(1.2);
+}
+.reactLogo:hover {
+  transform: scale(1.2);
+}
+
+.divider {
+  width: 60px;
+  height: 4px;
+  background-color: var(--AndejyPurple);
+  margin-top: 10px;
+  margin-bottom: 2em;
+}
+
+#portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100vw;
+  background-color: rgb(255, 255, 255);
+}
+
+.portfolio-headings {
+  width: 100vw;
+  padding: 5em;
+}
+.portfolio-headings h2 {
+  font-size: 2em;
+  font-weight: bold;
+}
+#portfolio .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  width: 90vw;
+  height: 90vh;
+  justify-content: center;
+  margin: 0 auto;
+}
+.card {
+  border: 3px solid var(--AndejyPurple);
+  border-radius: 10px;
+  color: #fff;
+  width: 300px;
+  height: fit-content;
+  padding-bottom: 1rem;
+  background-color: rgba(67, 19, 224, 0.432);
+  margin: 1em;
+  transition: 0.5s;
+}
+
+.card__img {
+  width: 100%;
+  height: 150px;
+  background-size: cover;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.img {
+  border-bottom: none;
+  width: 100%;
+  height: 150px;
+  background-size: cover;
+  cursor: pointer;
+  border-top-left-radius: 0.7rem;
+  border-top-right-radius: 0.7rem;
+  transition: 0.5s;
+}
+.img:hover {
+  transform: scale(1.1);
+  filter: grayscale(50%);
+  border-radius: 15px;
+}
+
+.card__title h2 {
+  padding: 30px;
+  color: #000;
+  text-align: center;
+}
+.card-info {
+  text-align: center;
+  font-weight: 500;
+}
+
+.card:hover {
+  box-shadow: 0 10px 27px #4313e0;
+  transform: translateY(-15px);
+}
+
+.card__projects-links {
+  display: flex;
+  justify-content: space-evenly;
+}
+.card__projects-links a {
+  color: #4313e0;
+  text-decoration: none;
+}
+.card__projects-links i {
+  color: rgb(67, 19, 224);
+  font-size: 1.5em;
+}
+
+.icon-portafolio {
+  font-size: 1.5em;
+  transition: 0.5s;
+}
+
+@media screen and (max-width: 578px) {
+  .navbar-nav {
+    margin-left: 0;
+    color: #000;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .navbar-nav li {
+    margin: 0;
+  }
+  .collapse{
+  display: block;
+  }
+  .main {
+    height: 100%;
+    width: 95%;
+    display: flex;
+    padding: 1.7em;
+  }
+  .main h1 {
+    margin-top: 0.5em;
+    display: block;
+    font-size: 2.5em;
+    font-weight: bolder;
+    white-space: nowrap;
+    border-right: 4px solid black;
+    width: 18ch;
+    overflow: hidden;
+    animation: typing 2.5s steps(18), blink 0.5s infinite step-end alternate;
+  }
+
+  .main p {
+    font-size: 1.7em;
+
+    margin-top: 1em;
+  }
+  .main img {
+    display: none;
+  }
+
+  #skills {
+    padding: 50px 0;
+    text-align: center;
+  }
+
+  #skills h2 {
+    padding-bottom: 30px;
+  }
+
+  .skills-row-left-image,
+  .skills-row-right-image {
+    padding-right: 2px;
+  }
+
+  .skills-row-left-image img,
+  .skills-row-right-image img {
+    height: 60px;
+  }
+
+  .skills-row-left-text h4,
+  .skills-row-right-text h4 {
+    font-size: 16px;
+  }
+
+  .skills-row-left-text p,
+  .skills-row-right-text p {
+    text-align: left;
+  }
+
+  #portfolio {
+    text-align: center;
+    margin-top: -4em;
+  }
+  #portfolio .container {
+    margin-top: 2em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    width: 90vw;
+    height: 90vh;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  #contact-section {
+    margin-top: 35em;
+  }
+
+  .container-contact {
+    width: 10020;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0%;
+  }
+
+  .contact-form {
+    font-size: 20px;
+  }
+
+  .form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 328px) {
+  .main h1 {
+    margin-top: 0.5em;
+    display: block;
+    font-size: 2.2em;
+    font-weight: bolder;
+    white-space: nowrap;
+    border-right: 4px solid black;
+    width: 18ch;
+    overflow: hidden;
+    animation: typing 2.5s steps(18), blink 0.5s infinite step-end alternate;
+  }
+
+  .main p {
+    font-size: 1.5em;
+
+    margin-top: 1em;
+  }
+}
+
+/* Animaciones */
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes changes {
+  0% {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("/src/assets/img/bag1.jpg") no-repeat center center/ cover;
+  }
+  30% {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("/src/assets/img/bag2.jpg") no-repeat center center/ cover;
+  }
+
+  50% {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("/src/assets/img/bag3.jpg") no-repeat center center/ cover;
+  }
+
+  100% {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("/src/assets/img/bag3.jpg") no-repeat center center/ cover;
+  }
+}
+
+@keyframes logo_rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes card-animation {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateX(108px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes up {
+  from {
+    transform: translateY(10px);
+  }
+  to {
+    transform: translateY(-10px);
+  }
+}
+@keyframes down {
+  from {
+    transform: translateY(-10px);
+  }
+  to {
+    transform: translateY(10px);
+  }
+}
