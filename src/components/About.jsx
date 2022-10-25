@@ -1,5 +1,6 @@
 import "../CSS/styles.css";
 import andejyLogo from "../assets/img/andejy.png";
+import Andejycv from "../assets/Angelcv.pdf";
 import { GrDocumentDownload } from "react-icons/gr";
 
 export const About = () => {
@@ -14,9 +15,8 @@ export const About = () => {
               I'm <span>Angel</span> Jimenez{" "}
             </h1>
             <p>
-              Soy un joven desarrollador web con ganas de aprender cada día más
-              sobre este mundo de la programación, y aplicar mis conocimientos
-              en mis actuales y futuros proyectos :){" "}
+              Soy un joven desarrollador web con ganas de aprender cada día más sobre este mundo de
+              la programación, y aplicar mis conocimientos en mis actuales y futuros proyectos :){" "}
             </p>
             <div className="links">
               <a href="https://www.instagram.com/andejy/" target="_blank">
@@ -38,15 +38,11 @@ export const About = () => {
                 <i className="fa-brands fa-whatsapp"></i>
               </a>
             </div>
-            <a download href="data/Modern CV M.pdf" target="_blank">
+            <a download href={Andejycv} target="_blank">
               {" "}
-              <button
-                className="download-cv"
-                onClick={() => alert("Gracias por descargar mi cv")}
-              >
+              <button className="download-cv" onClick={() => alert("Gracias por descargar mi cv")}>
                 {" "}
-                <GrDocumentDownload className="icon"></GrDocumentDownload>{" "}
-                Descargar Mi CV
+                <GrDocumentDownload className="icon"></GrDocumentDownload> Descargar Mi CV
               </button>
             </a>
           </div>
