@@ -33,13 +33,12 @@ button {
   justify-content: space-evenly;
 }
 .navbar-nav {
-  
   color: #000;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
-.collapse{
+.collapse {
   display: flex;
   justify-content: space-evenly;
   justify-content: flex-end;
@@ -334,6 +333,31 @@ button {
   transition: 0.5s;
 }
 
+@media screen and (max-width: 1280px) {
+  .download-cv {
+  }
+  .main {
+    display: flex;
+    align-items: center;
+  }
+
+  .main img {
+    width: 350px;
+    height: 420px;
+  }
+}
+
+@media screen and (max-width: 1044px) {
+  .main > img {
+    display: none;
+  }
+
+  .main img {
+    width: 350px;
+    height: 420px;
+  }
+}
+
 @media screen and (max-width: 578px) {
   .navbar-nav {
     margin-left: 0;
@@ -345,8 +369,8 @@ button {
   .navbar-nav li {
     margin: 0;
   }
-  .collapse{
-  display: block;
+  .collapse {
+    display: block;
   }
   .main {
     height: 100%;
@@ -370,9 +394,6 @@ button {
     font-size: 1.7em;
 
     margin-top: 1em;
-  }
-  .main img {
-    display: none;
   }
 
   #skills {
